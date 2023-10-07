@@ -1,0 +1,56 @@
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.form {
+  padding: 40px;
+  width: 400px;
+  border-radius: 8px;
+  border: 2px solid $color;
+  display: flex;
+  flex-direction: column;
+  input {
+    min-width: 300px;
+    width: 100%;
+    padding: 5px 10px;
+    border: $color 1px solid;
+    border-radius: 4px;
+    @extend %outlineNone;
+  }
+  button {
+    margin-top: 15px;
+    margin-left: auto;
+    border: $color 1px solid;
+    background: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    color: $color;
+    cursor: pointer;
+    @extend %outlineNone;
+  }
+}
+
+.connection_message {
+  width: 400px;
+  text-align: center;
+}
+
+.message {
+  width: 400px;
+  border: 2px solid $color;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 15px;
+}
